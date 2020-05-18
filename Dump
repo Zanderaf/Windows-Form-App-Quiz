@@ -1,0 +1,79 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp7
+{
+    public partial class Form1 : Form
+    {
+
+        //I'm using p to track the amount of points the user collects through the quiz.
+
+        int p = 0;
+
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Calculating the amount of point the user collected after submitting his answers.
+            switch (p)
+            {
+                case 1:
+                    radioButton1c.Checked = true;
+                    p++;
+                    break;
+                case 2:
+                    radioButton2a.Checked = true;
+                    p++;
+                    break;
+                case 3:
+                    radioButton3b.Checked = true;
+                    p++;
+                    break;
+                case 4:
+                    radioButton4c.Checked = true;
+                    p++;
+                    break;
+                case 5:
+                    radioButton5a.Checked = true;
+                    p++;
+                    break;
+                case 6:
+                    radioButton6a.Checked = true;
+                    p++;
+                    break;
+                case 7:
+                    radioButton7c.Checked = true;
+                    p++;
+                    break;
+                case 8:
+                    radioButton8d.Checked = true;
+                    p++;
+                    break;
+                case 9:
+                    radioButton9a.Checked = true;
+                    p++;
+                    break;
+                case 10:
+                    radioButton10b.Checked = true;
+                    p++;
+                    break;
+            }
+            MessageBox.Show($"You have collected {p} amount of points.");
+        }
+    }
+}
